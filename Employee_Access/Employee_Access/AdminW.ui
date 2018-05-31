@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdminW</class>
+ <widget class="QWidget" name="AdminW">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>493</width>
+    <height>355</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Admin Window</string>
+  </property>
+  <widget class="QLabel" name="label_type">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>50</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>UserType:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_name">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>90</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Username:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pswd">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>130</y>
+     <width>51</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Password:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_name">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>90</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_pswd">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>130</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Button_create">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>170</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Create User</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Button_delete">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>300</y>
+     <width>201</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Delete User at selected line</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_title">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>10</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="lineWidth">
+    <number>1</number>
+   </property>
+   <property name="text">
+    <string>Create User:</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="indent">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="typeBox">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>50</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>10</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>User List:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tbl">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>201</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="rowCount">
+    <number>0</number>
+   </property>
+   <property name="columnCount">
+    <number>0</number>
+   </property>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QPushButton" name="btn_return_login">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>300</y>
+     <width>151</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Return to login window</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>lineEdit_name</sender>
+   <signal>returnPressed()</signal>
+   <receiver>lineEdit_pswd</receiver>
+   <slot>setFocus()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>397</x>
+     <y>104</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>400</x>
+     <y>135</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tbl</sender>
+   <signal>cellClicked(int,int)</signal>
+   <receiver>Button_delete</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>187</x>
+     <y>205</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>28</x>
+     <y>303</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Button_delete</sender>
+   <signal>clicked()</signal>
+   <receiver>AdminW</receiver>
+   <slot>delete_user()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>133</x>
+     <y>309</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>448</x>
+     <y>254</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Button_create</sender>
+   <signal>clicked()</signal>
+   <receiver>AdminW</receiver>
+   <slot>add_user()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>364</x>
+     <y>182</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>356</x>
+     <y>221</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tbl</sender>
+   <signal>cellChanged(int,int)</signal>
+   <receiver>AdminW</receiver>
+   <slot>changeinfo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>166</x>
+     <y>110</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>227</x>
+     <y>131</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_pswd</sender>
+   <signal>returnPressed()</signal>
+   <receiver>Button_create</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>429</x>
+     <y>139</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>417</x>
+     <y>178</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btn_return_login</sender>
+   <signal>clicked()</signal>
+   <receiver>AdminW</receiver>
+   <slot>adm_return_login()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>319</x>
+     <y>303</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>313</x>
+     <y>281</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tbl</sender>
+   <signal>cellDoubleClicked(int,int)</signal>
+   <receiver>AdminW</receiver>
+   <slot>open_manip()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>183</x>
+     <y>230</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>253</x>
+     <y>220</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>add_user()</slot>
+  <slot>delete_user()</slot>
+  <slot>changeinfo()</slot>
+  <slot>adm_return_login()</slot>
+  <slot>open_manip()</slot>
+ </slots>
+</ui>

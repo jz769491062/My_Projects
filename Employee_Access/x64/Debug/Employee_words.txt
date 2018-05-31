@@ -1,0 +1,3 @@
+Worker 3 words/word1.txt words/word2.txt words/word3.txt
+Chief 3 words/word4.txt words/word5.txt words/word6.txt
+Manager 3 words/word7.txt words/word8.txt words/word9.txt
