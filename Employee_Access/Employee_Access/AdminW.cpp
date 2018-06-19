@@ -31,9 +31,9 @@ AdminW::AdminW(QWidget *parent)
 	ui.tbl->setColumnWidth(0, 66);
 	ui.tbl->setColumnWidth(1, 66);
 	ui.tbl->setColumnWidth(2, 66);
-	//µ¥»÷ÒÑÑ¡ÖĞ¸ñ×Ó£¨ÂıË«»÷£©¼´¿ÉĞŞ¸ÄÊı¾İ¡£Ë«»÷¾Í³ÉĞŞ¸ÄÎÄ¼şÈ¨ÏŞÁË
+	//å•å‡»å·²é€‰ä¸­æ ¼å­ï¼ˆæ…¢åŒå‡»ï¼‰å³å¯ä¿®æ”¹æ•°æ®ã€‚åŒå‡»å°±æˆä¿®æ”¹æ–‡ä»¶æƒé™äº†
 	ui.tbl->setEditTriggers(QAbstractItemView::SelectedClicked);
-	ui.Button_delete->hide();//³õÊ¼Òş²ØÉ¾³ıÄ£¿é£¬Ö±µ½Ò»¸öÓÃ»§±»Ñ¡ÖĞ
+	ui.Button_delete->hide();//åˆå§‹éšè—åˆ é™¤æ¨¡å—ï¼Œç›´åˆ°ä¸€ä¸ªç”¨æˆ·è¢«é€‰ä¸­
 
 	for (size_t i = 0; i < Admin::getPtr()->employees.size(); i++)
 	{
@@ -44,12 +44,12 @@ AdminW::AdminW(QWidget *parent)
 		ui.tbl->setItem(i, 2, new QTableWidgetItem(Admin::getPtr()->employees[i]->getpasswrd()));
 		ui.tbl->item(i, 2)->setTextAlignment(Qt::AlignCenter);
 	}
-	setAttribute(Qt::WA_DeleteOnClose);//È·±£Îö¹¹º¯ÊıÖ´ĞĞ
+	setAttribute(Qt::WA_DeleteOnClose);//ç¡®ä¿ææ„å‡½æ•°æ‰§è¡Œ
 }
 
 AdminW::~AdminW()
 {
-	update_list();//¹Ø±Õadmin½çÃæÊ±ÔÙ¸üĞÂÒ»±é
+	update_list();//å…³é—­adminç•Œé¢æ—¶å†æ›´æ–°ä¸€é
 }
 
 void AdminW::update_list()
@@ -58,7 +58,7 @@ void AdminW::update_list()
 	if (file.open(QIODevice::Text | QIODevice::WriteOnly))
 	{
 		QTextStream in(&file);
-		in << "Admin " << Admin::getPtr()->getname() << " " << Admin::getPtr()->getpass() << endl;//Admin²»ÄÜÍü
+		in << "Admin " << Admin::getPtr()->getname() << " " << Admin::getPtr()->getpass() << endl;//Adminä¸èƒ½å¿˜
 		for (size_t i = 0; i < Admin::getPtr()->employees.size(); i++)
 		{
 			in << Admin::getPtr()->employees[i]->getType() << " " <<
@@ -81,7 +81,7 @@ void AdminW::update_list()
 				}
 			}
 			if (i != Admin::getPtr()->employees.size() - 1)
-			{//×îºóÒ»ĞĞÎŞĞèÔÙ´´½¨ĞÂ¿ÕĞĞ
+			{//æœ€åä¸€è¡Œæ— éœ€å†åˆ›å»ºæ–°ç©ºè¡Œ
 				in << endl;
 			}
 		}
@@ -98,11 +98,11 @@ void AdminW::update_list()
 		QTextStream in(&File);
 		std::vector<QString> workerWW = Admin::getPtr()->getWorkerWords();
 		std::vector<QString> chiefWW = Admin::getPtr()->getChiefWords();
-		std::vector<QString> managerWW = Admin::getPtr()->getManagerWords();//±Ü¿ªvector iterators incompatible
+		std::vector<QString> managerWW = Admin::getPtr()->getManagerWords();//é¿å¼€vector iterators incompatible
 		std::vector<QString> tempWW(chiefWW.size());
 		in << "Worker" << " " << workerWW.size();
 		for (size_t j = 0; j < workerWW.size(); j++)
-		{//Êä³ö¹¤ÈËÄÜ·ÃÎÊµÄÎÄ¼şÃû
+		{//è¾“å‡ºå·¥äººèƒ½è®¿é—®çš„æ–‡ä»¶å
 			in << " " <<workerWW[j];
 		}
 		in << endl;
@@ -113,7 +113,7 @@ void AdminW::update_list()
 		tempWW.resize(itera - tempWW.begin());
 		itera = tempWW.begin();
 		while (itera!=tempWW.end())
-		{//Êä³ö¿Æ³¤ÄÜ·ÃÎÊµÄÎÄ¼şÃû
+		{//è¾“å‡ºç§‘é•¿èƒ½è®¿é—®çš„æ–‡ä»¶å
 			in << " " << (*itera);
 			itera++;
 		}
@@ -125,8 +125,9 @@ void AdminW::update_list()
 		itera = std::set_difference(managerWW.begin(),managerWW.end(), chiefWW.begin(),
 			chiefWW.end(), tempWW.begin());
 		tempWW.resize(itera - tempWW.begin());
+		itera = tempWW.begin();
 		while (itera != tempWW.end())
-		{//Êä³ö¾­ÀíÄÜ·ÃÎÊµÄÎÄ¼şÃû
+		{//è¾“å‡ºç»ç†èƒ½è®¿é—®çš„æ–‡ä»¶å
 			in << " " << (*itera);
 			itera++;
 		}
@@ -140,11 +141,11 @@ void AdminW::update_list()
 
 void AdminW::add_user()
 {
-	//Ìí¼ÓĞÂ³ÉÔ±ÖÁemployees
+	//æ·»åŠ æ–°æˆå‘˜è‡³employees
 	Admin::getPtr()->Createworkerbyname(ui.typeBox->currentText(), ui.lineEdit_name->text(),
-		ui.lineEdit_pswd->text(), {}, {});//ĞÂÓÃ»§Ö»ÓĞÄ¬ÈÏ·ÃÎÊ
+		ui.lineEdit_pswd->text(), {}, {});//æ–°ç”¨æˆ·åªæœ‰é»˜è®¤è®¿é—®
 
-	ui.tbl->setRowCount(Admin::getPtr()->employees.size());//¸üĞÂĞĞÊı
+	ui.tbl->setRowCount(Admin::getPtr()->employees.size());//æ›´æ–°è¡Œæ•°
 	ui.tbl->setItem(Admin::getPtr()->employees.size() - 1, 0,
 		new QTableWidgetItem(ui.lineEdit_name->text()));
 	ui.tbl->item(Admin::getPtr()->employees.size() - 1, 0)->setTextAlignment(Qt::AlignCenter);
@@ -159,9 +160,9 @@ void AdminW::add_user()
 
 void AdminW::delete_user()
 {
-	//½«Æä´Ó±í¸ñÖĞÉ¾³ı
+	//å°†å…¶ä»è¡¨æ ¼ä¸­åˆ é™¤
 	ui.tbl->removeRow(ui.tbl->currentRow());
-	//´ÓprofileÉ¾³ı£¬²¢ÖØĞ´txtÎÄ¼ş
+	//ä»profileåˆ é™¤ï¼Œå¹¶é‡å†™txtæ–‡ä»¶
 	auto it = Admin::getPtr()->employees.begin() + ui.tbl->currentRow();
 	Admin::getPtr()->employees.erase(it);
 	QMessageBox::information(this, "Delete user Info", "user delete success.\n");
@@ -211,8 +212,8 @@ void AdminW::open_manip()
 		return;
 	}
 	bool temp = Admin::getPtr()->login_correct(ui.tbl->item(cur_row, 0)->text(),
-		ui.tbl->item(cur_row, 2)->text());//temp ¿Ï¶¨ÊÇtrue¡£Ö»ÊÇ½èÓÃlogin_correct»»Ò»ÏÂcurrent_worker
-	update_list();//È·±£ÉÏ´Î¸ü¸Ä±»¼ÇÂ¼
+		ui.tbl->item(cur_row, 2)->text());//temp è‚¯å®šæ˜¯trueã€‚åªæ˜¯å€Ÿç”¨login_correctæ¢ä¸€ä¸‹current_worker
+	update_list();//ç¡®ä¿ä¸Šæ¬¡æ›´æ”¹è¢«è®°å½•
 	file_manip* man = new file_manip;
 	man->show();
 }
