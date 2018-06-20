@@ -1,0 +1,6 @@
+Admin d 4
+Manager c 3 Extra: 0 No: 0 
+Worker a 1 Extra: 0 No: 0 
+Chief b 2 Extra: 0 No: 0 
+Chief e 5 Extra: 1 words/word9.txt No: 1 words/word3.txt 
+Chief 55 555 Extra: 1 words/word7.txt No: 3 words/word3.txt words/word4.txt words/word5.txt 

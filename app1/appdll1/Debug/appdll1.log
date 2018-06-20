@@ -1,0 +1,153 @@
+﻿  stdafx.cpp
+  UserData.cpp
+c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(62): warning C4251: “Worker::name”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“Worker”的客户端使用
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(63): warning C4251: “Worker::passwrd”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“Worker”的客户端使用
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(64): warning C4251: “Worker::ea”: class“std::vector<std::string,std::allocator<_Ty>>”需要有 dll 接口由 class“Worker”的客户端使用
+          with
+          [
+              _Ty=std::string
+          ]
+  c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(12): note: 参见“std::vector<std::string,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=std::string
+          ]
+c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(65): warning C4251: “Worker::ed”: class“std::vector<std::string,std::allocator<_Ty>>”需要有 dll 接口由 class“Worker”的客户端使用
+          with
+          [
+              _Ty=std::string
+          ]
+  c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(12): note: 参见“std::vector<std::string,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=std::string
+          ]
+c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(177): warning C4251: “Admin::employees”: class“std::vector<Worker *,std::allocator<_Ty>>”需要有 dll 接口由 class“Admin”的客户端使用
+          with
+          [
+              _Ty=Worker *
+          ]
+  c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(177): note: 参见“std::vector<Worker *,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=Worker *
+          ]
+c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(182): warning C4251: “Admin::name”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“Admin”的客户端使用
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(183): warning C4251: “Admin::passw”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“Admin”的客户端使用
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(184): warning C4251: “Admin::workerW”: class“std::vector<std::string,std::allocator<_Ty>>”需要有 dll 接口由 class“Admin”的客户端使用
+          with
+          [
+              _Ty=std::string
+          ]
+  c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(12): note: 参见“std::vector<std::string,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=std::string
+          ]
+c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(185): warning C4251: “Admin::chiefW”: class“std::vector<std::string,std::allocator<_Ty>>”需要有 dll 接口由 class“Admin”的客户端使用
+          with
+          [
+              _Ty=std::string
+          ]
+  c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(12): note: 参见“std::vector<std::string,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=std::string
+          ]
+c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(186): warning C4251: “Admin::managerW”: class“std::vector<std::string,std::allocator<_Ty>>”需要有 dll 接口由 class“Admin”的客户端使用
+          with
+          [
+              _Ty=std::string
+          ]
+  c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(12): note: 参见“std::vector<std::string,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=std::string
+          ]
+c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\userdata.cpp(118): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\userdata.cpp(131): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\userdata.cpp(144): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\userdata.cpp(343): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\userdata.cpp(353): warning C4018: “<”: 有符号/无符号不匹配
+  employee.cpp
+c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(62): warning C4251: “Worker::name”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“Worker”的客户端使用
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(63): warning C4251: “Worker::passwrd”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“Worker”的客户端使用
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(64): warning C4251: “Worker::ea”: class“std::vector<std::string,std::allocator<_Ty>>”需要有 dll 接口由 class“Worker”的客户端使用
+          with
+          [
+              _Ty=std::string
+          ]
+  c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(12): note: 参见“std::vector<std::string,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=std::string
+          ]
+c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(65): warning C4251: “Worker::ed”: class“std::vector<std::string,std::allocator<_Ty>>”需要有 dll 接口由 class“Worker”的客户端使用
+          with
+          [
+              _Ty=std::string
+          ]
+  c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(12): note: 参见“std::vector<std::string,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=std::string
+          ]
+c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(177): warning C4251: “Admin::employees”: class“std::vector<Worker *,std::allocator<_Ty>>”需要有 dll 接口由 class“Admin”的客户端使用
+          with
+          [
+              _Ty=Worker *
+          ]
+  c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(177): note: 参见“std::vector<Worker *,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=Worker *
+          ]
+c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(182): warning C4251: “Admin::name”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“Admin”的客户端使用
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(183): warning C4251: “Admin::passw”: class“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”需要有 dll 接口由 class“Admin”的客户端使用
+  c:\program files (x86)\microsoft visual studio 14.0\vc\include\xstring(2633): note: 参见“std::basic_string<char,std::char_traits<char>,std::allocator<char>>”的声明
+c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(184): warning C4251: “Admin::workerW”: class“std::vector<std::string,std::allocator<_Ty>>”需要有 dll 接口由 class“Admin”的客户端使用
+          with
+          [
+              _Ty=std::string
+          ]
+  c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(12): note: 参见“std::vector<std::string,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=std::string
+          ]
+c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(185): warning C4251: “Admin::chiefW”: class“std::vector<std::string,std::allocator<_Ty>>”需要有 dll 接口由 class“Admin”的客户端使用
+          with
+          [
+              _Ty=std::string
+          ]
+  c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(12): note: 参见“std::vector<std::string,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=std::string
+          ]
+c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(186): warning C4251: “Admin::managerW”: class“std::vector<std::string,std::allocator<_Ty>>”需要有 dll 接口由 class“Admin”的客户端使用
+          with
+          [
+              _Ty=std::string
+          ]
+  c:\users\administrator\documents\visual studio 2015\projects\app1\appdll1\employee.h(12): note: 参见“std::vector<std::string,std::allocator<_Ty>>”的声明
+          with
+          [
+              _Ty=std::string
+          ]
+  appdll1.cpp
+  正在生成代码...
+  dllmain.cpp
+    正在创建库 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\app1\Debug\appdll1.lib 和对象 C:\Users\Administrator\Documents\Visual Studio 2015\Projects\app1\Debug\appdll1.exp
+UserData.obj : error LNK2019: 无法解析的外部符号 _sqlite3_close，该符号在函数 "public: __thiscall DBConnect::~DBConnect(void)" (??1DBConnect@@QAE@XZ) 中被引用
+UserData.obj : error LNK2019: 无法解析的外部符号 _sqlite3_exec，该符号在函数 "public: void __thiscall DBConnect::exec_command(char *,int (__cdecl*)(void *,int,char * *,char * *))" (?exec_command@DBConnect@@QAEXPADP6AHPAXHPAPAD2@Z@Z) 中被引用
+UserData.obj : error LNK2019: 无法解析的外部符号 _sqlite3_open，该符号在函数 "private: __thiscall DBConnect::DBConnect(char *)" (??0DBConnect@@AAE@PAD@Z) 中被引用
+C:\Users\Administrator\Desktop\sqlite.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“X86”冲突
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\app1\Debug\appdll1.dll : fatal error LNK1120: 3 个无法解析的外部命令
