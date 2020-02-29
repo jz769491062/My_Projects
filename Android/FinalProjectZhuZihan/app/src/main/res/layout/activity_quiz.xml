@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="24dp"
+        android:id="@+id/QuestionText"
+        />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/QuestionText"
+        app:layout_constraintStart_toStartOf="@id/QuestionText"
+        android:layout_marginTop="16dp"
+        android:id="@+id/Choice1"
+        />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/Choice1"
+        app:layout_constraintStart_toStartOf="@id/Choice1"
+        android:layout_marginTop="16dp"
+        android:id="@+id/Choice2"
+        />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/Choice2"
+        app:layout_constraintStart_toStartOf="@id/Choice2"
+        android:layout_marginTop="16dp"
+        android:id="@+id/Choice3"
+        />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/Choice3"
+        app:layout_constraintStart_toStartOf="@id/Choice3"
+        android:layout_marginTop="16dp"
+        android:id="@+id/Choice4"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <Button
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="@string/country_search"
+            android:textSize="12sp"
+            android:id="@+id/BtnCountrySearch"
+            />
+        <Button
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="@string/translate"
+            android:textSize="12sp"
+            android:id="@+id/BtnTranslate"
+            />
+        <Button
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="@string/take_quiz"
+            android:textSize="12sp"
+            android:id="@+id/BtnTakeQuiz"
+            />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

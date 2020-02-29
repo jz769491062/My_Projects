@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_language"
+        android:id="@+id/InputLanguageText"
+        android:textSize="18sp"
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        app:layout_constraintStart_toEndOf="@id/InputLanguageText"
+        android:id="@+id/InputLanguageSpinner"
+        >
+
+
+    </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/output_language"
+        android:id="@+id/OutputLanguageText"
+        app:layout_constraintTop_toBottomOf="@id/InputLanguageText"
+        android:textSize="18sp"
+        />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        app:layout_constraintStart_toEndOf="@id/InputLanguageText"
+        android:id="@+id/OutputLanguageSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/InputLanguageSpinner"
+        >
+
+    </Spinner>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/swap"
+        android:id="@+id/BtnSwap"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="8dp"
+        />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OutputLanguageSpinner"
+        android:text="@string/translate__"
+        android:id="@+id/ButtonToTranslate"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_text"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonToTranslate"
+        android:id="@+id/ID_inputText"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonToTranslate"
+        android:layout_marginTop="24dp"
+        android:id="@+id/ID_Input"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/output_text"
+        app:layout_constraintTop_toBottomOf="@+id/ID_Input"
+        android:id="@+id/ID_OutputText"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ID_OutputText"
+        android:layout_marginTop="24dp"
+        android:id="@+id/ID_Output"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <Button
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="@string/country_search"
+            android:textSize="12sp"
+            android:id="@+id/BtnCountrySearch"
+            />
+        <Button
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="@string/translate"
+            android:textSize="12sp"
+            android:id="@+id/BtnTranslate"
+            />
+        <Button
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="@string/take_quiz"
+            android:textSize="12sp"
+            android:id="@+id/BtnTakeQuiz"
+            />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

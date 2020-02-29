@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp">
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    app:cardBackgroundColor="#dcdcdc"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/cardV"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ConstraintL"
+        >
+
+        <ImageView
+            android:id="@+id/countrypic"
+            android:layout_width="180dp"
+            android:layout_height="120dp"
+            app:layout_constraintStart_toStartOf="@+id/ConstraintL"
+            app:layout_constraintTop_toTopOf="@+id/ConstraintL"
+            app:layout_constraintBottom_toBottomOf="@+id/ConstraintL"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+
+            />
+        <TextView
+            android:id="@+id/countrytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:layout_constraintStart_toEndOf="@id/countrypic"
+            app:layout_constraintTop_toTopOf="@+id/ConstraintL"
+            app:layout_constraintBottom_toBottomOf="@+id/ConstraintL"
+            android:layout_marginStart="20dp"
+            android:textSize="20sp"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.v7.widget.CardView>
+
+
+</android.support.v7.widget.LinearLayoutCompat>

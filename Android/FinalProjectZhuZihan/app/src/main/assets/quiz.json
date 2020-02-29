@@ -1,0 +1,125 @@
+﻿{
+    "response_code": 0,
+    "results": [
+      {
+        "category": "Geography",
+        "type": "multiple",
+        "difficulty": "hard",
+        "question": "What country is not a part of Scandinavia?",
+        "correct_answer": "Finland",
+        "incorrect_answers": [
+          "Norway",
+          "Sweden",
+          "Denmark"
+        ]
+      },
+      {
+        "category": "Geography",
+        "type": "multiple",
+        "difficulty": "hard",
+        "question": "In which city, is the Big Nickel located in Canada?",
+        "correct_answer": "Sudbury, Ontario",
+        "incorrect_answers": [
+          "Calgary, Alberta",
+          "Halifax, Nova Scotia ",
+          "Victoria, British Columbia"
+        ]
+      },
+      {
+        "category": "Geography",
+        "type": "multiple",
+        "difficulty": "hard",
+        "question": "Which of these countries is NOT a part of the Asian continent?",
+        "correct_answer": "Suriname",
+        "incorrect_answers": [
+          "Georgia",
+          "Russia",
+          "Singapore"
+        ]
+      },
+      {
+        "category": "Geography",
+        "type": "multiple",
+        "difficulty": "hard",
+        "question": "Where is the Luxor Hotel &amp; Casino located?",
+        "correct_answer": "Paradise, Nevada",
+        "incorrect_answers": [
+          "Las Vegas, Nevada",
+          "Winchester, Nevada",
+          "Jackpot, Nevada"
+        ]
+      },
+      {
+        "category": "Geography",
+        "type": "multiple",
+        "difficulty": "hard",
+        "question": "Which is the largest freshwater lake in the world?",
+        "correct_answer": "Lake Superior ",
+        "incorrect_answers": [
+          "Caspian Sea",
+          "Lake Michigan",
+          "Lake Huron"
+        ]
+      },
+      {
+        "category": "Geography",
+        "type": "multiple",
+        "difficulty": "hard",
+        "question": "What is the name of the Canadian national anthem?",
+        "correct_answer": "O Canada",
+        "incorrect_answers": [
+          "O Red Maple",
+          "Leaf-Spangled Banner",
+          "March of the Puck Drop"
+        ]
+      },
+      {
+        "category": "Geography",
+        "type": "multiple",
+        "difficulty": "hard",
+        "question": "What is the name of the formerly rich fishing grounds off the island of Newfoundland, Canada?",
+        "correct_answer": "Grand Banks",
+        "incorrect_answers": [
+          "Great Barrier Reef",
+          "Mariana Trench",
+          "Hudson Bay"
+        ]
+      },
+      {
+        "category": "Geography",
+        "type": "multiple",
+        "difficulty": "hard",
+        "question": "What is the second-largest city in Lithuania?",
+        "correct_answer": "Kaunas",
+        "incorrect_answers": [
+          "Panevėžys",
+          "Vilnius",
+          "Klaipėda"
+        ]
+      },
+      {
+        "category": "Geography",
+        "type": "multiple",
+        "difficulty": "hard",
+        "question": "What is the land connecting North America and South America?",
+        "correct_answer": "Isthmus of Panama",
+        "incorrect_answers": [
+          "Isthmus of Suez",
+          "Urals",
+          "Australasia"
+        ]
+      },
+      {
+        "category": "Geography",
+        "type": "multiple",
+        "difficulty": "hard",
+        "question": "The Andaman and Nicobar Islands in South East Asia are controlled by which country?",
+        "correct_answer": "India",
+        "incorrect_answers": [
+          "Vietnam",
+          "Thailand",
+          "Indonesia"
+        ]
+      }
+    ]
+  }
