@@ -6,39 +6,41 @@
     android:layout_margin="8dp">
 
     <TextView
+        android:id="@+id/InputLanguageText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/input_language"
-        android:id="@+id/InputLanguageText"
         android:textSize="18sp"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
+        android:id="@+id/InputLanguageSpinner"
         android:layout_width="wrap_content"
         android:layout_height="24dp"
+        android:layout_marginStart="16dp"
         app:layout_constraintStart_toEndOf="@id/InputLanguageText"
-        android:id="@+id/InputLanguageSpinner"
-        >
+        app:layout_constraintTop_toTopOf="parent">
 
 
     </Spinner>
 
     <TextView
+        android:id="@+id/OutputLanguageText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/output_language"
-        android:id="@+id/OutputLanguageText"
-        app:layout_constraintTop_toBottomOf="@id/InputLanguageText"
         android:textSize="18sp"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/InputLanguageText" />
 
     <Spinner
+        android:id="@+id/OutputLanguageSpinner"
         android:layout_width="wrap_content"
         android:layout_height="24dp"
-        app:layout_constraintStart_toEndOf="@id/InputLanguageText"
-        android:id="@+id/OutputLanguageSpinner"
-        app:layout_constraintTop_toBottomOf="@+id/InputLanguageSpinner"
-        >
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@id/OutputLanguageText"
+        app:layout_constraintTop_toBottomOf="@+id/InputLanguageSpinner">
 
     </Spinner>
 
@@ -67,58 +69,75 @@
         android:layout_height="wrap_content"
         android:text="@string/input_text"
         app:layout_constraintTop_toBottomOf="@+id/ButtonToTranslate"
+        app:layout_constraintStart_toStartOf="parent"
         android:id="@+id/ID_inputText"
         />
 
     <EditText
+        android:id="@+id/ID_Input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/ButtonToTranslate"
         android:layout_marginTop="24dp"
-        android:id="@+id/ID_Input"
-        />
+        android:autofillHints=""
+        android:hint="@string/type_text_to_translate"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonToTranslate" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/output_text"
         app:layout_constraintTop_toBottomOf="@+id/ID_Input"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
         android:id="@+id/ID_OutputText"
         />
 
     <EditText
+        android:id="@+id/ID_Output"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/ID_OutputText"
         android:layout_marginTop="24dp"
-        android:id="@+id/ID_Output"
-        />
+        android:autofillHints=""
+        android:hint="@string/translated_text"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ID_OutputText" />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        >
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
         <Button
+            android:id="@+id/BtnCountrySearch"
             android:layout_width="135dp"
             android:layout_height="wrap_content"
             android:text="@string/country_search"
             android:textSize="12sp"
-            android:id="@+id/BtnCountrySearch"
+            style="?android:attr/buttonBarButtonStyle"
             />
+
         <Button
+            android:id="@+id/BtnTranslate"
             android:layout_width="135dp"
             android:layout_height="wrap_content"
             android:text="@string/translate"
             android:textSize="12sp"
-            android:id="@+id/BtnTranslate"
+            style="?android:attr/buttonBarButtonStyle"
             />
+
         <Button
+            android:id="@+id/BtnTakeQuiz"
             android:layout_width="135dp"
             android:layout_height="wrap_content"
             android:text="@string/take_quiz"
             android:textSize="12sp"
-            android:id="@+id/BtnTakeQuiz"
+            style="?android:attr/buttonBarButtonStyle"
             />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

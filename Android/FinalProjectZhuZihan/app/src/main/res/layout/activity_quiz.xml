@@ -57,27 +57,36 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="?android:attr/buttonBarStyle"
         >
+
         <Button
+            android:id="@+id/BtnCountrySearch"
             android:layout_width="135dp"
             android:layout_height="wrap_content"
             android:text="@string/country_search"
             android:textSize="12sp"
-            android:id="@+id/BtnCountrySearch"
+            style="?android:attr/buttonBarButtonStyle"
             />
+
         <Button
+            android:id="@+id/BtnTranslate"
             android:layout_width="135dp"
             android:layout_height="wrap_content"
             android:text="@string/translate"
             android:textSize="12sp"
-            android:id="@+id/BtnTranslate"
+            style="?android:attr/buttonBarButtonStyle"
             />
+
         <Button
+            android:id="@+id/BtnTakeQuiz"
             android:layout_width="135dp"
             android:layout_height="wrap_content"
             android:text="@string/take_quiz"
             android:textSize="12sp"
-            android:id="@+id/BtnTakeQuiz"
+            style="?android:attr/buttonBarButtonStyle"
             />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

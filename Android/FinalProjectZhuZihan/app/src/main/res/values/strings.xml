@@ -17,4 +17,7 @@
     <string name="translate__">Translate!</string>
     <string name="input_text">Input text:</string>
     <string name="output_text">Output text:</string>
+    <string name="flag">flag</string>
+    <string name="type_text_to_translate">Type text to translate</string>
+    <string name="translated_text">Translated text</string>
 </resources>

@@ -12,14 +12,16 @@
         android:layout_gravity="center_horizontal">
 
         <EditText
+            android:id="@+id/Search_country_by_name"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:hint="@string/search_country_by_name"
-            android:id="@+id/Search_country_by_name"
-            android:layout_weight="1"
             android:layout_gravity="top"
-            android:textSize="18sp"
-            android:padding="8dp"/>
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:hint="@string/search_country_by_name"
+            android:inputType="text"
+            android:padding="8dp"
+            android:textSize="18sp" />
 
         <Button
             android:layout_width="150dp"
@@ -41,6 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        style="?android:attr/buttonBarStyle"
         >
         <Button
             android:layout_width="135dp"
@@ -48,6 +51,7 @@
             android:text="@string/country_search"
             android:textSize="12sp"
             android:id="@+id/BtnCountrySearch"
+            style="?android:attr/buttonBarButtonStyle"
             />
         <Button
             android:layout_width="135dp"
@@ -55,6 +59,7 @@
             android:text="@string/translate"
             android:textSize="12sp"
             android:id="@+id/BtnTranslate"
+            style="?android:attr/buttonBarButtonStyle"
             />
         <Button
             android:layout_width="135dp"
@@ -62,6 +67,7 @@
             android:text="@string/take_quiz"
             android:textSize="12sp"
             android:id="@+id/BtnTakeQuiz"
+            style="?android:attr/buttonBarButtonStyle"
             />
     </LinearLayout>
 </LinearLayout>
